@@ -8,7 +8,7 @@ class ResNetGenerator(nn.Module):
                 n_blocks:int=9) -> None:
         
         assert(n_blocks >= 0)
-        super(ResNetGenerator).__init__()
+        super(ResNetGenerator, self).__init__()
 
         self.input_nc = input_nc
         self.output_nc = output_nc
